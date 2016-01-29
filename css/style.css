@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+}
+
+body {
+    margin: 0;
+}
+
+#imgwrapper {
+    text-align: center;
+}
+
+#messagewrapper {
+    text-align: center;
+}
+
+p {
+    font-family: 'Architects Daughter', cursive;
+    font-size: 1.5em;
+    margin: 0 0 1em;
+}
+
+#wordcontainer {
+    text-align: center;
+}
+
+#wordcontainer span.lettercontainer {
+    width: 1em;
+    display: inline-block;
+}
+
+#wordcontainer span.letter{
+    font-family: 'Architects Daughter', cursive;
+    font-size: 2em;
+    font-weight: bold;
+    width: 0.7em;
+    text-align: center;
+    display: inline-block;
+    line-height: 0.2em;
+    border-bottom: 2px solid #000;
+}
+
+#wordcontainer span.letter:nth-child(4n+1) {
+    border-width: 25px 2px;
+    -webkit-border-image: url(../img/border1.png) 25 stretch;
+    -o-border-image: url(../img/border1.png) 25 stretch;
+    border-image: url(../img/border1.png) 25 stretch;
+}
+
+#wordcontainer span.letter:nth-child(4n+2) {
+    border-width: 25px 2px;
+    -webkit-border-image: url(../img/border2.png) 25 stretch;
+    -o-border-image: url(../img/border2.png) 25 stretch;
+    border-image: url(../img/border2.png) 25 stretch;
+}
+
+#wordcontainer span.letter:nth-child(4n+3) {
+    border-width: 25px 2px;
+    -webkit-border-image: url(../img/border3.png) 25 stretch;
+    -o-border-image: url(../img/border3.png) 25 stretch;
+    border-image: url(../img/border3.png) 25 stretch;
+}
+
+#wordcontainer span.letter:nth-child(4n+4) {
+    border-width: 25px 2px;
+    -webkit-border-image: url(../img/border4.png) 25 stretch;
+    -o-border-image: url(../img/border4.png) 25 stretch;
+    border-image: url(../img/border4.png) 25 stretch;
+}
+
+img#hangman {
+    width: auto;
+}
+
+#guesscontainer {
+    text-align: center;
+}
+
+.letterrow {
+    display: block;
+}
+
+.letterrow:not(:last-of-type) {
+    margin-bottom: 0.1em;
+}
+
+.letterrow button.letter {
+    font-family: 'Architects Daughter', cursive;
+    font-size: 2em;
+    width: 1.5em;
+    color: #000;
+    border: none;
+    background-color: transparent;
+    padding: 0 0.3em;
+}
+
+.letterrow button.letter:hover {
+    color: #ff0000;
+}
+
+.letterrow button.letter.disabled0 {
+    background-image: url(../img/scratch0.svg);
+    background-size: 110% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.letterrow button.letter.disabled1 {
+    background-image: url(../img/scratch1.svg);
+    background-size: 110% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.letterrow button.letter.disabled2 {
+    background-image: url(../img/scratch2.svg);
+    background-size: 110% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+button:focus {
+    outline: 0;
+}
+
+#thirdrow button.letter:last-of-type {
+    visibility: hidden;
+}
